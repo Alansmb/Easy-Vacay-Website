@@ -52,18 +52,11 @@ export const metadata: Metadata = {
       "Discover the best destinations around the world. Plan, organize, and experience group vacations made simple with Easy Vacay.",
     images: [
       {
-        url: "/og-image.png", // Recommended: Create a 1200x630px OG image
+        url: "/og-easy.png", // Recommended: Create a 1200x630px OG image
         width: 1200,
         height: 630,
         alt: "Easy Vacay - Group Vacation Planning App",
         type: "image/png",
-      },
-      {
-        url: "/girl.jpg", // Fallback image
-        width: 1200,
-        height: 630,
-        alt: "Easy Vacay - Discover the Best Destinations",
-        type: "image/jpeg",
       },
     ],
   },
@@ -74,12 +67,8 @@ export const metadata: Metadata = {
       "Discover the best destinations around the world. Plan, organize, and experience group vacations made simple with Easy Vacay.",
     images: [
       {
-        url: "/og-image.png", // Recommended: Create a 1200x630px OG image
+        url: "/og-easy.png", // Recommended: Create a 1200x630px OG image
         alt: "Easy Vacay - Group Vacation Planning App",
-      },
-      {
-        url: "/girl.jpg", // Fallback image
-        alt: "Easy Vacay - Discover the Best Destinations",
       },
     ],
     creator: "@easyvacay", // Update with your Twitter handle
@@ -112,6 +101,11 @@ export const metadata: Metadata = {
     telephone: false,
   },
   manifest: "/manifest.json", // You can create a web app manifest
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -119,14 +113,6 @@ export const metadata: Metadata = {
   },
   other: {
     "mobile-web-app-capable": "yes",
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.ico", type: "image/x-icon" },
-    ],
-    apple: [{ url: "/favicon.ico", sizes: "180x180" }],
-    shortcut: "/favicon.ico",
   },
 };
 
